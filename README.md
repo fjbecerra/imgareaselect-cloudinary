@@ -1,7 +1,7 @@
 Image Selection
 ===============
 Simple project web built on spring boot to select part of image with ImgAreaSelect a jQuery pluggin and Cloudinary.
-H2 emmbebed database behind to persist ids.
+H2 embebed database behind to persist ids.
 
 Configuration: 
 * Sign-up on https://cloudinary.com if you don't have an account yet.
