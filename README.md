@@ -9,7 +9,7 @@ Configuration:
 
 Build and run:
 * mvn clean install
-* java -jar target/<jar name>.jar
+* java -jar target/(jar name).jar
 
 
 
