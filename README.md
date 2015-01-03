@@ -8,8 +8,8 @@ Configuration:
 * On application.properties, set cloudinary cloud.name, api.key and api.secret.
 
 Build and run:
-> mvn clean install
-> java -jar target/<jar name>.jar
+* mvn clean install
+* java -jar target/<jar name>.jar
 
 
 
