@@ -34,7 +34,7 @@ public class PhotoController {
         return "index";
     }
 
-    @RequestMapping(value = "/upload", method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST)
     public String upload(@RequestPart("files") MultipartFile file, ModelMap model)
     {
         try
@@ -54,7 +54,7 @@ public class PhotoController {
         return "content";
     }
 
-    @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public String delete(@PathVariable("id") String photoId)
     {
         try

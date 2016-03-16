@@ -55,7 +55,7 @@ public class PhotoTest {
         byte[] bytes = IOUtils.toByteArray(new FileInputStream("src/test/resources/img/horse.jpg"));
         MediaType contentType = new MediaType("multipart", "form-data");
 
-        mockMvc.perform(fileUpload("/upload")
+        mockMvc.perform(fileUpload("/")
                         .file("files", bytes)
                         .contentType(contentType))
                 .andExpect(status().isOk())
@@ -85,7 +85,7 @@ public class PhotoTest {
 
     @Test
     public void test3Delete() throws Exception {
-        mockMvc.perform(delete("/delete/1"))
+        mockMvc.perform(delete("/1"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("index"));
     }
